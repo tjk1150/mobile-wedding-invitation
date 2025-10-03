@@ -1,0 +1,47 @@
+:root {
+  /* colors */
+  --color-primary: #b99493;
+  --color-primary-light: #d2bdbc;
+  --color-primary-light-2: #f0e4e4;
+  --color-primary-dark: #8e5f5d;
+  --color-white: #ffffff;
+  --color-white-2: #eaeaea;
+  --color-bg-1: #efeae4;
+  --color-green-1: #31a671;
+  --color-red-1: #e54f4f;
+  --color-blue-1: rgb(114, 187, 223);
+  --color-font-default: #434343;
+  --color-font-light: #a3a3a3;
+  --color-font-heading: #b99493;
+  --color-gray-1: #c8c8c8;
+
+  /* typography */
+  --title-fs-kr: 1.3rem;
+  --title-fw-kr: 600;
+  --title-fs-en: 1.8rem;
+  --title-fw-en: 700;
+
+  /* layout */
+  --content-max-width: 600px;
+}
+
+@custom-media --mobile-sm (max-width: 380px);
+@custom-media --mobile-md (min-width: 381px) and (max-width: 410px);
+@custom-media --mobile-lg (min-width: 411px);
+
+/* utilities translated 1:1 from variables.scss */
+.input-focused {
+  outline: solid;
+  outline-width: 3px;
+  outline-color: var(--color-blue-1);
+}
+.title-font-kr {
+  color: var(--color-primary);
+  font-size: var(--title-fs-kr);
+  font-weight: var(--title-fw-kr);
+}
+.title-font-en {
+  color: var(--color-primary);
+  font-size: var(--title-fs-en);
+  font-weight: var(--title-fw-en);
+}

@@ -1,0 +1,47 @@
+{
+	"meta": {
+		"title": "Emily & Anthony's Wedding Day"
+	},
+	"cover": {
+		"date": "6.7.2025 Sat. 4:00 pm",
+		"place": "Irvine, CA"
+	},
+	"letter": {
+		"date": "6.7.2025",
+		"sub_title": "You're invited to our wedding!",
+		"letter_content": "You've been with us through so many unforgettable moments — college days, camping trips, and celebrating life together.\nPlease join us for one of the biggest milestones yet! We'd be overjoyed to have you witness and celebrate our wedding as we embark on this new chapter together."
+	},
+	"rsvp": {
+		"title": "RSVP",
+		"reply_by": "Please kindly reply by May 16th.",
+		"fullname_placeholder": "Full name (English)",
+		"send": "SEND",
+		"missing_name_error": "Please enter your full name.",
+		"missing_rsvp_error": "Please select your RSVP.",
+		"email_error": "Something went wrong. Please try again.",
+		"email_success": "You're all set. Thank you!",
+		"select": {
+			"select_attendance": "Select attendance",
+			"yes": "Yes, I'll be there!",
+			"no": "Sorry, can't make it."
+		},
+		"accordion": {
+			"dress_code": "Dress Code",
+			"the_menu": "The Menu",
+			"semi_formal": "Semi-formal",
+			"suit_and_tie": "Suit & tie, cocktail attire welcome",
+			"menu_title": "Duet Entrée Course",
+			"beef": "Braised roasted short rib filet",
+			"fish": "Miso glazed Hawaiian butterfish",
+			"vegetarian": "We’re also offering a vegetarian option—just let us know in advance if that’s your preference!"
+		}
+	},
+	"gallery": {
+		"title": "Gallery",
+		"sub_title": "Click to enlarge the images."
+	},
+	"location": {
+		"title": "Location",
+		"address_copied": "The address is copied!"
+	}
+}
