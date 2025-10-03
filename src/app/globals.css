@@ -1,17 +1,17 @@
-@import 'tailwindcss';
-@import './variables.css';
+@import "./font.css";
+@import "./variables.css";
 
 /* === translated from our-wedding-invitation/src/styles/global.scss === */
 
 .kr {
-  font-family: 'Noto Serif KR', serif;
+  font-family: "Noto Serif KR", serif;
   font-display: block;
   color: var(--color-font-default);
   word-break: keep-all;
 }
 
 .en {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: var(--font-cormorant);
   font-weight: 500;
   font-style: normal;
   font-display: block;
@@ -19,7 +19,7 @@
 }
 
 .en-sacramento {
-  font-family: 'Sacramento', serif;
+  font-family: var(--font-sacramento);
   font-weight: 400;
   font-style: normal;
   color: var(--color-font-default);
@@ -89,7 +89,7 @@ select {
   font: inherit;
 }
 
-input[type='text'] {
+input[type="text"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -97,8 +97,8 @@ input[type='text'] {
 }
 
 button,
-input[type='submit'],
-input[type='reset'] {
+input[type="submit"],
+input[type="reset"] {
   background: none;
   color: inherit;
   border: none;
@@ -122,7 +122,7 @@ section.location {
 /* Cover styles (ported) */
 section.cover {
   position: relative;
-  background-image: url('/assets/cover.webp');
+  background-image: url("/assets/cover.webp");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;

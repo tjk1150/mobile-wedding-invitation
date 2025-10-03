@@ -39,6 +39,26 @@ export default function Cover(): React.ReactElement {
         backgroundSize: "cover",
       }}
     >
+      <div>
+        <video
+          autoPlay
+          loop
+          playsInline
+          muted
+          style={{
+            width: "100%",
+            mixBlendMode: "screen",
+            opacity: 1,
+            visibility: "initial",
+          }}
+        >
+          <source
+            data-v-83965f94=""
+            src="https://mcard.fromtoday.co.kr/mcard/assets/snow_00.mp4"
+          />
+        </video>
+      </div>
+
       {/* decor layer (no external lib) */}
       <div className="confetti-area" aria-hidden="true" />
 
