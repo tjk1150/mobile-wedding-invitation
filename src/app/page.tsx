@@ -14,7 +14,7 @@ export default function Home() {
       <Letter />
       <Calendar />
       <Gallery />
-      <Location />
+      {/* <Location /> */}
     </div>
   );
 }
