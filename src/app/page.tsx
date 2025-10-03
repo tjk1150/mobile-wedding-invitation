@@ -2,7 +2,7 @@ import Calendar from '@/sections/Calendar';
 import Cover from '@/sections/Cover';
 import Gallery from '@/sections/Gallery';
 import Letter from '@/sections/Letter';
-import Location from '@/sections/Location';
+// import Location from '@/sections/Location';
 
 export default function Home() {
   return (
@@ -14,7 +14,7 @@ export default function Home() {
       <Letter />
       <Calendar />
       <Gallery />
-      <Location />
+      {/* <Location /> */}
     </div>
   );
 }
