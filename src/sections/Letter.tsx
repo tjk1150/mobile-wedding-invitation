@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import { useLang, useT } from '@/lib/i18n/LangProvider';
-import React from 'react';
+import { useLang, useT } from "@/lib/i18n/LangProvider";
+import React from "react";
 
 export default function Letter(): React.ReactElement {
   const t = useT();
@@ -9,69 +9,68 @@ export default function Letter(): React.ReactElement {
 
   return (
     <>
-      <section className='letter'>
-        <div className='header'>
+      <section className="letter">
+        <div className="header">
           <img
-            className='header-deco'
-            src='/assets/letter-deco.svg'
-            alt='letter header deco'
+            className="header-deco"
+            src="/assets/letter-deco.svg"
+            alt="letter header deco"
           />
-          <h2 className={`title ${isKr ? 'kr' : 'en'}`}>{t('letter.date')}</h2>
-          <p className={`sub-title ${isKr ? 'kr' : 'en'}`}>
-            {t('letter.sub_title')}
+          <h2 className={`title ${isKr ? "kr" : "en"}`}>{t("letter.date")}</h2>
+          <p className={`sub-title ${isKr ? "kr" : "en"}`}>
+            {t("letter.sub_title")}
           </p>
         </div>
 
-        <div className='letter-container'>
-          <p className={`letter ${isKr ? 'kr' : 'en'}`}>
-            {t('letter.letter_content')}
+        <div className="letter-container">
+          <p
+            style={{
+              whiteSpace: "pre-line",
+            }}
+            className={`letter ${isKr ? "kr" : "en"}`}
+          >
+            {t("letter.letter_content")}
           </p>
 
           {isEn ? (
-            <div className='letter-signature'>
-              <p className='en'>with love</p>
-              <p className='en'>JinTae & JoEun</p>
+            <div className="letter-signature">
+              <p className="en">with love</p>
+              <p className="en">JinTae & JoEun</p>
             </div>
           ) : (
-            <div className='family-description kr'>
+            <div className="family-description kr">
               <p>
                 장진철
-                <span className='name-divider' aria-hidden>
+                <span className="name-divider" aria-hidden>
                   <svg
-                    width='3'
-                    height='3'
-                    viewBox='0 0 3 3'
-                    xmlns='http://www.w3.org/2000/svg'
+                    width="3"
+                    height="3"
+                    viewBox="0 0 3 3"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    <circle cx='1.5' cy='1.5' r='1.5' fill='#B99493' />
+                    <circle cx="1.5" cy="1.5" r="1.5" fill="#B99493" />
                   </svg>
                 </span>
-                이해열 <span className='son'>의 아들</span>장진태
+                이해열 <span className="son">의 아들</span>장진태
               </p>
               <p>
                 김원태
-                <span className='name-divider' aria-hidden>
+                <span className="name-divider" aria-hidden>
                   <svg
-                    width='3'
-                    height='3'
-                    viewBox='0 0 3 3'
-                    xmlns='http://www.w3.org/2000/svg'
+                    width="3"
+                    height="3"
+                    viewBox="0 0 3 3"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    <circle cx='1.5' cy='1.5' r='1.5' fill='#B99493' />
+                    <circle cx="1.5" cy="1.5" r="1.5" fill="#B99493" />
                   </svg>
                 </span>
-                박한업<span className='daughter'>의 딸</span>김조은
+                박한업<span className="daughter">의 딸</span>김조은
               </p>
             </div>
           )}
         </div>
       </section>
-
-      <img
-        className='letter-bottom'
-        src='/assets/letter-bottom.webp'
-        alt='letter bottom'
-      />
     </>
   );
 }
