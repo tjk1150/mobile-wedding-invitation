@@ -114,7 +114,8 @@ section.rsvp,
 section.gallery,
 section.calendar,
 section.location,
-section.account {
+section.account,
+section.dday {
   /* max-width: var(--content-max-width); */
   max-width: var(--content-max-width);
   margin: auto;
@@ -461,3 +462,44 @@ section.account h2.title {
   background: #f6f1ee;
 }
 
+/* DDay section */
+section.dday {
+  background-color: var(--color-white);
+  padding: 1em 2em 2.5em 2em;
+}
+section.dday .header {
+  margin-bottom: 1.2em;
+}
+section.dday .dday-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  column-gap: 10px;
+  margin: 12px auto 16px auto;
+}
+section.dday .time-box {
+  width: 86px;
+  height: 96px;
+  background: #eadbcc;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section.dday .time-box .num {
+  font-size: 1.5rem;
+  color: var(--color-font-default);
+}
+section.dday .time-box .label {
+  font-size: 0.8rem;
+  color: var(--color-font-light);
+}
+section.dday .colon {
+  display: inline-block;
+  padding-bottom: 26px;
+  color: var(--color-font-light);
+}
+.dday-note {
+  text-align: center;
+}

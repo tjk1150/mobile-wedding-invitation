@@ -1,6 +1,7 @@
 import Account from '@/sections/Account';
 import Calendar from '@/sections/Calendar';
 import Cover from '@/sections/Cover';
+import DDay from '@/sections/DDay';
 import Gallery from '@/sections/Gallery';
 import Letter from '@/sections/Letter';
 import Location from '@/sections/Location';
@@ -14,6 +15,7 @@ export default function Home() {
       <Cover />
       <Letter />
       <Calendar />
+      <DDay />
       <Gallery />
       <Account />
       <Location />
