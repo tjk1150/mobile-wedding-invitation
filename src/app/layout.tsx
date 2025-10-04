@@ -40,7 +40,7 @@ const cormorant = Cormorant_Garamond({
 });
 
 export const metadata: Metadata = {
-  title: "진태 & 조은 결혼식에 초대합니다.",
+  title: "진태 ♥ 조은 결혼식에 초대합니다.",
   description: "2026년 02월 28일 토요일 2시 30분",
 };
 

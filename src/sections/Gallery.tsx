@@ -35,7 +35,7 @@ export default function Gallery(): React.ReactElement {
           list.map((p, idx) => (
             <a
               key={idx}
-              className="slide"
+              className="slide aspect-auto"
               href={`/gallery/image${p}.webp`}
               target="_blank"
               rel="noreferrer"

@@ -12,7 +12,7 @@ export default function Letter(): React.ReactElement {
       <section className="letter">
         <div className="header">
           <img
-            className="header-deco"
+            className="header-deco "
             src="/assets/letter-deco.svg"
             alt="letter header deco"
           />

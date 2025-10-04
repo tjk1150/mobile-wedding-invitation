@@ -5,7 +5,8 @@ import React from "react";
 export default function Calendar(): React.ReactElement {
   return (
     <section className="calendar">
-      <h2 className="title en">2월</h2>
+      <h2 className="title en">2026.02.28</h2>
+      <p>토요일 오후 2시 30분</p>
       <div className="calendar-content">
         <img
           className="week-col"
