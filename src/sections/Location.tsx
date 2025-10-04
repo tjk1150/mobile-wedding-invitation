@@ -1,5 +1,7 @@
 'use client';
 
+import KakaoMap from '@/components/kakao/KakaoMap';
+import { KakaoMapSDKProvider } from '@/components/kakao/KakaoMapSDKProvider';
 import { useLang, useT } from '@/lib/i18n/LangProvider';
 import React from 'react';
 
@@ -9,10 +11,6 @@ const VENUE = 'CN 웨딩홀 계산 베르테 홀';
 export default function Location(): React.ReactElement {
   const t = useT();
   const { isKr } = useLang();
-  const apiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY ?? '';
-  const googleMapsUrl = `https://www.google.com/maps/embed/v1/place?key=${apiKey}&q=${encodeURIComponent(
-    ADDRESS
-  )}`;
 
   const copyAddress = async () => {
     try {
@@ -35,13 +33,17 @@ export default function Location(): React.ReactElement {
           <span className='address'>{ADDRESS}</span>
         </button>
         <div className='map'>
-          <iframe
-            className='google-maps'
-            title='google maps'
-            allowFullScreen
-            referrerPolicy='no-referrer-when-downgrade'
-            src={googleMapsUrl}
-          />
+          <KakaoMapSDKProvider>
+            <KakaoMap
+              address={ADDRESS}
+              level={3}
+              debug
+              onLoad={(map) => {
+                const c = map.getCenter();
+                console.log('[KakaoMap] center lat/lng:', c.getLat(), c.getLng());
+              }}
+            />
+          </KakaoMapSDKProvider>
         </div>
         <img className='location-deco' src='/assets/location-deco.svg' alt='' />
       </section>
