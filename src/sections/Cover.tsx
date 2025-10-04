@@ -24,7 +24,7 @@ export default function Cover(): React.ReactElement {
   }, []);
 
   useEffect(() => {
-    setRandomCover(Math.floor(Math.random() * 29) + 1);
+    setRandomCover(Math.floor(Math.random() * 32) + 1);
   }, []);
 
   if (!randomCover) return <></>;
@@ -37,6 +37,7 @@ export default function Cover(): React.ReactElement {
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center center",
         backgroundSize: "cover",
+        overflow: "hidden",
       }}
     >
       <div>

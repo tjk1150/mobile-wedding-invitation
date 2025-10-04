@@ -18,7 +18,7 @@ export default function Gallery(): React.ReactElement {
   const { isKr } = useLang();
 
   useEffect(() => {
-    setList(generateUniqueRandoms(10, 28)); // 1~28 중 중복 없이 10개
+    setList(generateUniqueRandoms(30, 31)); // 1~28 중 중복 없이 10개
   }, []);
 
   return (
@@ -36,13 +36,13 @@ export default function Gallery(): React.ReactElement {
             <a
               key={idx}
               className="slide"
-              href={`/assets/gallery/image${p}.webp`}
+              href={`/gallery/image${p}.webp`}
               target="_blank"
               rel="noreferrer"
             >
               <Image
                 className="thumbnail"
-                src={`/assets/gallery/image${p}.webp`}
+                src={`/gallery/image${p}.webp`}
                 alt=""
                 width={1200}
                 height={1200}
