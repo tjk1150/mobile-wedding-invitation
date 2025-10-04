@@ -113,6 +113,7 @@ input[type='reset'] {
 }
 
 section.cover,
+section.music,
 section.letter,
 section.rsvp,
 section.gallery,
@@ -123,6 +124,24 @@ section.dday {
   /* max-width: var(--content-max-width); */
   max-width: var(--content-max-width);
   margin: auto;
+}
+
+section.music {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.music-wrapper button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.music-wrapper {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  z-index: 1;
 }
 
 /* Cover styles (ported) */
@@ -473,13 +492,6 @@ section.account h2.title {
   padding: 8px 12px;
   border-radius: 10px;
   background: #f6f1ee;
-}
-/* music */
-.music-wrapper {
-  position: absolute;
-  right: 16px;
-  top: 10px;
-  z-index: 1;
 }
 
 /* DDay section */
