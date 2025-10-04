@@ -1,12 +1,12 @@
-'use client';
+"use client";
 
-import KakaoMap from '@/components/kakao/KakaoMap';
-import { KakaoMapSDKProvider } from '@/components/kakao/KakaoMapSDKProvider';
-import { useLang, useT } from '@/lib/i18n/LangProvider';
-import React from 'react';
+import KakaoMap from "@/components/kakao/KakaoMap";
+import { KakaoMapSDKProvider } from "@/components/kakao/KakaoMapSDKProvider";
+import { useLang, useT } from "@/lib/i18n/LangProvider";
+import React from "react";
 
-const ADDRESS = '인천광역시 계양구 경명대로 1108';
-const VENUE = 'CN 웨딩홀 계산 베르테 홀';
+const ADDRESS = "인천광역시 계양구 경명대로 1108";
+const VENUE = "CN 웨딩홀 계산 베르테 홀";
 
 export default function Location(): React.ReactElement {
   const t = useT();
@@ -15,24 +15,24 @@ export default function Location(): React.ReactElement {
   const copyAddress = async () => {
     try {
       await navigator.clipboard.writeText(ADDRESS);
-      alert(t('location.address_copied'));
+      alert(t("location.address_copied"));
     } catch {}
   };
 
   return (
     <>
       <img
-        src='/assets/location-top-wave.svg'
-        className='location-top-wave'
-        alt=''
+        src="/assets/location-top-wave.svg"
+        className="location-top-wave"
+        alt=""
       />
-      <section className='location'>
-        <h2 className={`title ${isKr ? 'kr' : 'en'}`}>{t('location.title')}</h2>
-        <p className='venue en'>{VENUE}</p>
-        <button className='copy-address en' onClick={copyAddress} type='button'>
-          <span className='address'>{ADDRESS}</span>
+      <section className="location">
+        <h2 className={`title kr`}>{t("location.title")}</h2>
+        <p className="venue">{VENUE}</p>
+        <button className="copy-address kr" onClick={copyAddress} type="button">
+          <span className="address">{ADDRESS}</span>
         </button>
-        <div className='map'>
+        <div className="map">
           <KakaoMapSDKProvider>
             <KakaoMap
               address={ADDRESS}
@@ -40,12 +40,16 @@ export default function Location(): React.ReactElement {
               debug
               onLoad={(map) => {
                 const c = map.getCenter();
-                console.log('[KakaoMap] center lat/lng:', c.getLat(), c.getLng());
+                console.log(
+                  "[KakaoMap] center lat/lng:",
+                  c.getLat(),
+                  c.getLng()
+                );
               }}
             />
           </KakaoMapSDKProvider>
         </div>
-        <img className='location-deco' src='/assets/location-deco.svg' alt='' />
+        <img className="location-deco" src="/assets/location-deco.svg" alt="" />
       </section>
     </>
   );

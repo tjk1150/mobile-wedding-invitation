@@ -5,8 +5,13 @@ import React from "react";
 export default function Calendar(): React.ReactElement {
   return (
     <section className="calendar">
-      <h2 className="title en">2월</h2>
-      <div className="calendar-content">
+      <hgroup>
+        <h2 className="title en" data-aos="fade-up">
+          2026.02.28
+        </h2>
+        <p data-aos="fade-up">토요일 오후 2시 30분</p>
+      </hgroup>
+      <div className="calendar-content" data-aos="fade-up">
         <img
           className="week-col"
           src="/assets/calendar/calendar-sunday.svg"

@@ -30,7 +30,7 @@ export default function Cover(): React.ReactElement {
   if (!randomCover) return <></>;
   return (
     <section
-      className="cover"
+      className="cover relative"
       style={{
         height: `${sectionHeight}px`,
         backgroundImage: `url('/gallery/image${randomCover}.webp')`,
@@ -63,14 +63,14 @@ export default function Cover(): React.ReactElement {
       {/* decor layer (no external lib) */}
       <div className="confetti-area" aria-hidden="true" />
 
-      <div className="names-kr-box">
+      <div className="names-kr-box" data-aos="fade-in" data-aos-delay="1500">
         <span className="names kr">장진태</span>
         <span className="names kr">그리고</span>
         <span className="names kr">김조은</span>
       </div>
 
       <div className="cover-title-container">
-        <div className="names-en-box">
+        <div className="names-en-box" data-aos="fade-in" data-aos-delay="1000">
           <span className="names en-sacramento">JinTae & JoEun</span>
         </div>
 
