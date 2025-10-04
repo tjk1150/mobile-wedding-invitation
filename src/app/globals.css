@@ -345,7 +345,7 @@ section.gallery p.sub-title.en {
 }
 
 /* Location styles (ported) */
-img.location-top-wave {
+img.gallery-bottom-wave {
   max-width: var(--content-max-width);
   margin: auto;
 }

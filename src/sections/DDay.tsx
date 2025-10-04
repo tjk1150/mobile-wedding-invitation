@@ -37,7 +37,12 @@ export default function DDay(): React.ReactElement {
 
   return (
     <section className='dday'>
-      <div className='dday-wrap' role='timer' aria-live='polite'>
+      <div
+        className='dday-wrap'
+        role='timer'
+        aria-live='polite'
+        data-aos='fade-up'
+      >
         <div className='time-box'>
           <span className='num' suppressHydrationWarning>
             {String(days).padStart(2, '0')}
@@ -67,7 +72,7 @@ export default function DDay(): React.ReactElement {
         </div>
       </div>
 
-      <p className={`dday-note ${isKr ? 'kr' : 'en'}`}>
+      <p className={`dday-note ${isKr ? 'kr' : 'en'}`} data-aos='fade-up'>
         {hasPassed
           ? isKr
             ? `${couple}의 결혼식이 시작되었습니다.`
