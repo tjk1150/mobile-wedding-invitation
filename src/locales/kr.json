@@ -43,5 +43,12 @@
   "location": {
     "title": "예식장",
     "address_copied": "주소를 복사했습니다."
+  },
+  "account": {
+    "title": "마음 전하실 곳",
+    "groom": { "title": "신랑측 계좌번호" },
+    "bride": { "title": "신부측 계좌번호" },
+    "copy": "복사",
+    "copied": "계좌번호가 복사되었습니다"
   }
 }
