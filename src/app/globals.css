@@ -1,5 +1,5 @@
-@import "./font.css";
-@import "./variables.css";
+@import 'tailwindcss';
+@import './variables.css';
 
 /* === translated from our-wedding-invitation/src/styles/global.scss === */
 
@@ -18,7 +18,7 @@
   color: var(--color-font-default);
 }
 .gowun-dodum-regular {
-  font-family: "Gowun Dodum", sans-serif;
+  font-family: 'Gowun Dodum', sans-serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -93,7 +93,7 @@ select {
   font: inherit;
 }
 
-input[type="text"] {
+input[type='text'] {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -101,8 +101,8 @@ input[type="text"] {
 }
 
 button,
-input[type="submit"],
-input[type="reset"] {
+input[type='submit'],
+input[type='reset'] {
   background: none;
   color: inherit;
   border: none;
@@ -128,7 +128,7 @@ section.dday {
 /* Cover styles (ported) */
 section.cover {
   position: relative;
-  background-image: url("/assets/cover.webp");
+  background-image: url('/assets/cover.webp');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -480,6 +480,7 @@ section.account h2.title {
   right: 16px;
   top: 10px;
   z-index: 1;
+}
 
 /* DDay section */
 section.dday {
