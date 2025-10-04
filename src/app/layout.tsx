@@ -4,10 +4,12 @@ import {
   Cormorant_Garamond,
   Geist,
   Geist_Mono,
+  Gowun_Dodum,
   IBM_Plex_Sans_KR,
   Sacramento,
 } from "next/font/google";
 import { Suspense } from "react";
+
 import "./globals.css";
 
 const geistSans = Geist({
@@ -25,6 +27,7 @@ const sacramento = Sacramento({
   weight: "400",
   variable: "--font-sacramento",
 });
+
 // IBM Plex Sans KR (구글 폰트)
 const ibm = IBM_Plex_Sans_KR({
   subsets: ["latin"],
@@ -37,6 +40,12 @@ const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
   weight: ["400", "500", "700"],
   variable: "--font-cormorant",
+});
+
+const Gowun = Gowun_Dodum({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-gowun",
 });
 
 export const metadata: Metadata = {
@@ -52,7 +61,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${sacramento.variable} ${ibm.variable} ${cormorant.variable} antialiased`}
+        className={`${geistSans.variable} ${Gowun.variable} ${geistMono.variable} ${sacramento.variable} ${ibm.variable} ${cormorant.variable} antialiased`}
       >
         <Suspense>
           <LangProvider>{children}</LangProvider>

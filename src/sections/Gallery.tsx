@@ -24,8 +24,10 @@ export default function Gallery(): React.ReactElement {
   return (
     <section className="gallery">
       <div className="header">
-        <h2 className={`title ${isKr ? "kr" : "en"}`}>{t("gallery.title")}</h2>
-        <p className={`sub-title ${isKr ? "kr" : "en"}`}>
+        <h2 data-aos="fade-up" className={`title ${isKr ? "kr" : "en"}`}>
+          {t("gallery.title")}
+        </h2>
+        <p data-aos="fade-up" className={`sub-title ${isKr ? "kr" : "en"}`}>
           {t("gallery.sub_title")}
         </p>
       </div>
@@ -35,6 +37,7 @@ export default function Gallery(): React.ReactElement {
           list.map((p, idx) => (
             <a
               key={idx}
+              data-aos="fade-in"
               className="slide aspect-auto"
               href={`/gallery/image${p}.webp`}
               target="_blank"

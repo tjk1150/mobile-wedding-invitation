@@ -12,18 +12,20 @@ export default function Letter(): React.ReactElement {
       <section className="letter">
         <div className="header">
           <img
+            data-aos="fade-up"
             className="header-deco "
             src="/assets/letter-deco.svg"
             alt="letter header deco"
           />
           {/* <h2 className={`title ${isKr ? "kr" : "en"}`}>{t("letter.date")}</h2> */}
-          <p className={`sub-title ${isKr ? "kr" : "en"}`}>
+          <p data-aos="fade-up" className={`sub-title ${isKr ? "kr" : "en"}`}>
             {t("letter.sub_title")}
           </p>
         </div>
 
         <div className="letter-container">
           <p
+            data-aos="fade-up"
             style={{
               whiteSpace: "pre-line",
             }}
@@ -39,7 +41,7 @@ export default function Letter(): React.ReactElement {
             </div>
           ) : (
             <div className="family-description kr">
-              <p>
+              <p data-aos="fade-up">
                 장진철
                 <span className="name-divider" aria-hidden>
                   <svg
@@ -53,7 +55,7 @@ export default function Letter(): React.ReactElement {
                 </span>
                 이해열 <span className="son">의 아들</span>장진태
               </p>
-              <p>
+              <p data-aos="fade-up">
                 김원태
                 <span className="name-divider" aria-hidden>
                   <svg

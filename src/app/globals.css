@@ -1,10 +1,10 @@
-@import './font.css';
-@import './variables.css';
+@import "./font.css";
+@import "./variables.css";
 
 /* === translated from our-wedding-invitation/src/styles/global.scss === */
 
 .kr {
-  font-family: 'Noto Serif KR', serif;
+  font-family: var(--font-gowun), serif;
   font-display: block;
   color: var(--color-font-default);
   word-break: keep-all;
@@ -17,7 +17,11 @@
   font-display: block;
   color: var(--color-font-default);
 }
-
+.gowun-dodum-regular {
+  font-family: "Gowun Dodum", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 .en-sacramento {
   font-family: var(--font-sacramento);
   font-weight: 400;
@@ -89,7 +93,7 @@ select {
   font: inherit;
 }
 
-input[type='text'] {
+input[type="text"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -97,8 +101,8 @@ input[type='text'] {
 }
 
 button,
-input[type='submit'],
-input[type='reset'] {
+input[type="submit"],
+input[type="reset"] {
   background: none;
   color: inherit;
   border: none;
@@ -123,7 +127,7 @@ section.account {
 /* Cover styles (ported) */
 section.cover {
   position: relative;
-  background-image: url('/assets/cover.webp');
+  background-image: url("/assets/cover.webp");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -163,7 +167,7 @@ section.cover {
   display: block;
   color: var(--color-white);
   word-spacing: 5px;
-  font-size: 2.2rem;
+  font-size: 3.2rem;
 }
 .event-date-and-place-box {
   width: 100%;
@@ -353,6 +357,7 @@ section.location {
   padding: 1em 2em;
 }
 section.location h2.title {
+  font-size: 1.2rem;
   color: var(--color-primary);
   text-align: center;
   margin-bottom: 1em;
@@ -407,6 +412,7 @@ section.account .header {
 }
 section.account h2.title {
   text-align: center;
+  font-size: 1.2rem;
 }
 .account-group {
   margin-bottom: 1.2em;
@@ -467,4 +473,3 @@ section.account h2.title {
   border-radius: 10px;
   background: #f6f1ee;
 }
-

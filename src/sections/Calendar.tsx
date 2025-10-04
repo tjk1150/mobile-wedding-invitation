@@ -6,10 +6,12 @@ export default function Calendar(): React.ReactElement {
   return (
     <section className="calendar">
       <hgroup>
-        <h2 className="title en">2026.02.28</h2>
-        <p>토요일 오후 2시 30분</p>
+        <h2 className="title en" data-aos="fade-up">
+          2026.02.28
+        </h2>
+        <p data-aos="fade-up">토요일 오후 2시 30분</p>
       </hgroup>
-      <div className="calendar-content">
+      <div className="calendar-content" data-aos="fade-up">
         <img
           className="week-col"
           src="/assets/calendar/calendar-sunday.svg"
