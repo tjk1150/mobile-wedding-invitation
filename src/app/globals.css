@@ -473,3 +473,10 @@ section.account h2.title {
   border-radius: 10px;
   background: #f6f1ee;
 }
+/* music */
+.music-wrapper {
+  position: absolute;
+  right: 16px;
+  top: 10px;
+  z-index: 1;
+}
