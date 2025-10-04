@@ -12,6 +12,7 @@
     "@netlify/plugin-nextjs": "^5.13.3",
     "aos": "^2.3.4",
     "next": "15.5.4",
+    "photoswipe": "^5.4.4",
     "react": "19.1.0",
     "react-dom": "19.1.0"
   },

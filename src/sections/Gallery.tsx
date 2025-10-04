@@ -1,7 +1,10 @@
 'use client';
 
+import { galleryDimensions } from '@/constants/galleryDimensions';
 import { useLang, useT } from '@/lib/i18n/LangProvider';
 import Image from 'next/image';
+import PhotoSwipeLightbox from 'photoswipe/lightbox';
+import 'photoswipe/style.css';
 import React, { useEffect, useState } from 'react';
 
 function generateUniqueRandoms(count: number, max: number) {
@@ -19,6 +22,20 @@ export default function Gallery(): React.ReactElement {
 
   useEffect(() => {
     setList(generateUniqueRandoms(30, 31)); // 1~28 중 중복 없이 10개
+  }, []);
+
+  useEffect(() => {
+    const lightbox = new PhotoSwipeLightbox({
+      gallery: '#gallery',
+      children: 'a',
+      showHideAnimationType: 'fade',
+      pswpModule: () => import('photoswipe'),
+    });
+
+    lightbox.init();
+    return () => {
+      lightbox.destroy();
+    };
   }, []);
 
   return (
@@ -41,6 +58,8 @@ export default function Gallery(): React.ReactElement {
                 data-aos='fade-in'
                 className='slide aspect-auto'
                 href={`/gallery/image${p}.webp`}
+                data-pswp-width={galleryDimensions[p]?.width ?? 853}
+                data-pswp-height={galleryDimensions[p]?.height ?? 1280}
                 target='_blank'
                 rel='noreferrer'
               >
@@ -48,8 +67,8 @@ export default function Gallery(): React.ReactElement {
                   className='thumbnail'
                   src={`/gallery/image${p}.webp`}
                   alt=''
-                  width={1200}
-                  height={1200}
+                  width={galleryDimensions[p]?.width ?? 853}
+                  height={galleryDimensions[p]?.height ?? 1280}
                 />
               </a>
             ))}

@@ -1,0 +1,37 @@
+export type ImageDimension = { width: number; height: number };
+
+// Static dimension table for /public/gallery/image{n}.webp
+// Update values as needed when exact dimensions are known.
+export const galleryDimensions: Record<number, ImageDimension> = {
+  1: { width: 853, height: 1280 },
+  2: { width: 853, height: 1280 },
+  3: { width: 853, height: 1280 },
+  4: { width: 853, height: 1280 },
+  5: { width: 853, height: 1280 },
+  6: { width: 853, height: 1280 },
+  7: { width: 853, height: 1280 },
+  8: { width: 853, height: 1280 },
+  9: { width: 853, height: 1280 },
+  10: { width: 924, height: 1280 },
+  11: { width: 853, height: 1280 },
+  12: { width: 881, height: 1280 },
+  13: { width: 853, height: 1280 },
+  14: { width: 853, height: 1280 },
+  15: { width: 853, height: 1280 },
+  16: { width: 853, height: 1280 },
+  17: { width: 853, height: 1280 },
+  18: { width: 853, height: 1280 },
+  19: { width: 853, height: 1280 },
+  20: { width: 853, height: 1280 },
+  21: { width: 853, height: 1280 },
+  22: { width: 853, height: 1280 },
+  23: { width: 853, height: 1280 },
+  24: { width: 853, height: 1280 },
+  25: { width: 899, height: 1280 },
+  26: { width: 853, height: 1280 },
+  27: { width: 853, height: 1280 },
+  28: { width: 853, height: 1280 },
+  29: { width: 853, height: 1280 },
+  30: { width: 853, height: 1280 },
+  31: { width: 853, height: 1280 },
+};
