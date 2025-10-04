@@ -16,7 +16,7 @@ export default function Letter(): React.ReactElement {
             src="/assets/letter-deco.svg"
             alt="letter header deco"
           />
-          <h2 className={`title ${isKr ? "kr" : "en"}`}>{t("letter.date")}</h2>
+          {/* <h2 className={`title ${isKr ? "kr" : "en"}`}>{t("letter.date")}</h2> */}
           <p className={`sub-title ${isKr ? "kr" : "en"}`}>
             {t("letter.sub_title")}
           </p>

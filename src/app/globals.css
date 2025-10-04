@@ -216,7 +216,7 @@ img.header-deco {
 }
 .sub-title.kr {
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 .sub-title.en {
   font-size: 1.3rem;
@@ -269,11 +269,21 @@ p.letter.en {
 section.calendar {
   position: relative;
   background-color: var(--color-white);
-  padding: 5em 3.5em 4em 3.5em;
+  padding: 7em 3.5em 4em 3.5em;
 }
-section.calendar .title {
+section.calendar hgroup {
   text-align: center;
-  margin-bottom: 1em;
+  padding-bottom: 2em;
+  color: #aa8988;
+  margin-bottom: 1rem;
+  border-bottom: solid 1px #efeae4;
+}
+section.calendar hgroup h2 {
+  font-size: 2.2rem;
+  color: #aa8988;
+}
+section.calendar hgroup p {
+  font-size: 1rem;
 }
 section.calendar .calendar-content {
   display: flex;
