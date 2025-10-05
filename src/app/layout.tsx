@@ -54,10 +54,10 @@ export const metadata: Metadata = {
   icons: { icon: "/streamline-stickies-color_love.ico" },
   openGraph: {
     images: {
-      url: "/main.jpeg",
+      url: "https://jintae-joeun-wedding-invitation.netlify.app/main.jpeg",
       width: 800,
       height: 600,
-      alt: "Open Graph Image",
+      alt: "진태 & 조은 결혼식 초대 이미지",
     },
   },
 };
