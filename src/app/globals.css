@@ -1,5 +1,5 @@
-@import 'tailwindcss';
-@import './variables.css';
+@import "tailwindcss";
+@import "./variables.css";
 
 /* === translated from our-wedding-invitation/src/styles/global.scss === */
 
@@ -18,7 +18,7 @@
   color: var(--color-font-default);
 }
 .gowun-dodum-regular {
-  font-family: 'Gowun Dodum', sans-serif;
+  font-family: "Gowun Dodum", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -93,7 +93,7 @@ select {
   font: inherit;
 }
 
-input[type='text'] {
+input[type="text"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -101,8 +101,8 @@ input[type='text'] {
 }
 
 button,
-input[type='submit'],
-input[type='reset'] {
+input[type="submit"],
+input[type="reset"] {
   background: none;
   color: inherit;
   border: none;
@@ -147,7 +147,7 @@ section.music {
 /* Cover styles (ported) */
 section.cover {
   position: relative;
-  background-image: url('/assets/cover.webp');
+  background-image: url("/assets/cover.webp");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -325,13 +325,14 @@ section.calendar img.calendar-deco {
 
 /* Gallery styles (ported) */
 section.gallery {
-  padding: 4.5em 2em 2em 2em;
+  padding: 5.5em 2em 2em 2em;
   background-color: var(--color-white);
 }
 section.gallery .header {
   margin-bottom: 2em;
 }
 section.gallery h2.title {
+  font-size: 1.2rem;
   text-align: center;
 }
 section.gallery h2.title.en {
@@ -374,16 +375,13 @@ section.location {
   flex-direction: column;
   align-items: center;
   background-color: var(--color-bg-1);
-  padding: 1em 2em;
+  padding: 6em 2em;
 }
 section.location h2.title {
   font-size: 1.2rem;
   color: var(--color-primary);
   text-align: center;
   margin-bottom: 1em;
-}
-section.location p.venue.en {
-  font-size: 1.1rem;
 }
 button.copy-address {
   display: flex;
@@ -392,7 +390,7 @@ button.copy-address {
 }
 button.copy-address .address {
   display: inline-block;
-  font-size: 1.2rem;
+  font-size: 1rem;
   text-decoration: underline;
 }
 .map {
@@ -445,8 +443,10 @@ section.account h2.title {
   padding: 1.2em 1.4em;
   border-radius: 12px;
   background: #e8d8cd; /* soft beige like reference */
-  color: var(--color-font-default);
   position: relative;
+}
+.account-toggle .kr {
+  color: #806867 !important;
 }
 .account-toggle .chevron {
   position: absolute;
@@ -506,21 +506,21 @@ section.dday .dday-wrap {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  column-gap: 10px;
+  column-gap: 0.425em;
   margin: 12px auto 16px auto;
 }
 section.dday .time-box {
-  width: 86px;
-  height: 96px;
+  width: 85px;
+  height: 85px;
   background: #eadbcc;
-  border-radius: 16px;
+  border-radius: 12px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 section.dday .time-box .num {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: var(--color-font-default);
 }
 section.dday .time-box .label {

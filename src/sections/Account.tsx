@@ -99,7 +99,7 @@ function AccountGroup({ id, title, entries }: GroupProps) {
                 aria-label={`계좌번호 복사: ${e.bank} ${e.number}`}
                 type="button"
               >
-                <span className="kr">{t("account.copy")}</span>
+                <span className="kr text-sm">{t("account.copy")}</span>
               </button>
               <div className="account-name kr">{e.name}</div>
             </li>
