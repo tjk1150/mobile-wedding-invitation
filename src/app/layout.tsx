@@ -54,7 +54,7 @@ export const metadata: Metadata = {
   icons: { icon: "/streamline-stickies-color_love.ico" },
   openGraph: {
     images: {
-      url: "https://drive.google.com/u/0/drive-viewer/AKGpihZe5hwTuh2pbMM9tzYd5ajak17znCvG3Ziruv8j0P8oKbjC5leeF_qV85p3MwHMywBSlEhxx5Af0YU2VIiDbHNNIi7xsDvOW0o=s2560",
+      url: "/main.jpeg",
       width: 800,
       height: 600,
       alt: "Open Graph Image",
