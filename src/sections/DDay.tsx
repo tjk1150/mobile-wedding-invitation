@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import { EVENT_DATETIME_ISO } from '@/constants/event';
-import { useLang, useT } from '@/lib/i18n/LangProvider';
-import React, { useEffect, useMemo, useState } from 'react';
+import { EVENT_DATETIME_ISO } from "@/constants/event";
+import { useLang, useT } from "@/lib/i18n/LangProvider";
+import React, { useEffect, useMemo, useState } from "react";
 
 function getTimeParts(diffMs: number) {
   const clamped = Math.max(0, diffMs);
@@ -33,53 +33,61 @@ export default function DDay(): React.ReactElement {
   const { days, hours, minutes, seconds } = getTimeParts(diffMs);
   const hasPassed = now !== null && now >= target;
 
-  const couple = t('event.couple');
+  const couple = t("event.couple");
 
   return (
-    <section className='dday'>
+    <section className="dday kr">
       <div
-        className='dday-wrap'
-        role='timer'
-        aria-live='polite'
-        data-aos='fade-up'
+        className="dday-wrap"
+        role="timer"
+        aria-live="polite"
+        data-aos="fade-up"
       >
-        <div className='time-box'>
-          <span className='num' suppressHydrationWarning>
-            {String(days).padStart(2, '0')}
+        <div className="time-box">
+          <span className="num" suppressHydrationWarning>
+            {String(days).padStart(2, "0")}
           </span>
-          <span className='label en'>DAYS</span>
+          <span className="label en">DAYS</span>
         </div>
-        <span className='colon'>:</span>
-        <div className='time-box'>
-          <span className='num' suppressHydrationWarning>
-            {String(hours).padStart(2, '0')}
+        <span className="colon">:</span>
+        <div className="time-box">
+          <span className="num" suppressHydrationWarning>
+            {String(hours).padStart(2, "0")}
           </span>
-          <span className='label en'>HOUR</span>
+          <span className="label en">HOUR</span>
         </div>
-        <span className='colon'>:</span>
-        <div className='time-box'>
-          <span className='num' suppressHydrationWarning>
-            {String(minutes).padStart(2, '0')}
+        <span className="colon">:</span>
+        <div className="time-box">
+          <span className="num" suppressHydrationWarning>
+            {String(minutes).padStart(2, "0")}
           </span>
-          <span className='label en'>MIN</span>
+          <span className="label en">MIN</span>
         </div>
-        <span className='colon'>:</span>
-        <div className='time-box'>
-          <span className='num' suppressHydrationWarning>
-            {String(seconds).padStart(2, '0')}
+        <span className="colon">:</span>
+        <div className="time-box">
+          <span className="num" suppressHydrationWarning>
+            {String(seconds).padStart(2, "0")}
           </span>
-          <span className='label en'>SEC</span>
+          <span className="label en">SEC</span>
         </div>
       </div>
 
-      <p className={`dday-note ${isKr ? 'kr' : 'en'}`} data-aos='fade-up'>
-        {hasPassed
-          ? isKr
-            ? `${couple}의 결혼식이 시작되었습니다.`
-            : `The wedding of ${couple} has begun!`
-          : isKr
-          ? `${couple}의 결혼식이 ${days}일 남았습니다.`
-          : `${days} days until our wedding.`}
+      <p className={`dday-note ${isKr ? "kr" : "en"}`} data-aos="fade-up">
+        {hasPassed ? (
+          isKr ? (
+            `${couple}의 결혼식이 시작되었습니다.`
+          ) : (
+            `The wedding of ${couple} has begun!`
+          )
+        ) : isKr ? (
+          <>
+            {couple}의 결혼식이{" "}
+            <span className="text-[#806867] font-bold">{days}</span>일
+            남았습니다.
+          </>
+        ) : (
+          `${days} days until our wedding.`
+        )}
       </p>
     </section>
   );
