@@ -51,6 +51,15 @@ const Gowun = Gowun_Dodum({
 export const metadata: Metadata = {
   title: "진태 ♥ 조은 결혼식에 초대합니다.",
   description: "2026년 02월 28일 토요일 2시 30분",
+  icons: { icon: "/streamline-stickies-color_love.ico" },
+  openGraph: {
+    images: {
+      url: "https://drive.google.com/u/0/drive-viewer/AKGpihZe5hwTuh2pbMM9tzYd5ajak17znCvG3Ziruv8j0P8oKbjC5leeF_qV85p3MwHMywBSlEhxx5Af0YU2VIiDbHNNIi7xsDvOW0o=s2560",
+      width: 800,
+      height: 600,
+      alt: "Open Graph Image",
+    },
+  },
 };
 
 export default function RootLayout({
