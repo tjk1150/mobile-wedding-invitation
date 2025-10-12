@@ -13,7 +13,7 @@ import { useEffect } from 'react';
 
 export default function Home() {
   useEffect(() => {
-    AOS.init({ startEvent: 'DOMContentLoaded', delay: 300, duration: 1000 });
+    AOS.init({ startEvent: 'DOMContentLoaded', delay: 200, duration: 800 });
 
     AOS.refresh();
   }, []);
@@ -23,7 +23,6 @@ export default function Home() {
       style={{ display: 'contents' }}
     >
       <Music />
-
       <Cover />
       <Letter />
       <Calendar />
