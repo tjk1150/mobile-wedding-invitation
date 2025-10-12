@@ -7,7 +7,7 @@ import { MapPinIcon } from '@heroicons/react/16/solid';
 import React from 'react';
 
 const ADDRESS = '인천광역시 계양구 경명대로 1108';
-const VENUE = 'CN 웨딩홀 계산 베르테 홀';
+const VENUE = 'CN 웨딩홀 계산점 2층 베르테 홀';
 
 export default function Location(): React.ReactElement {
   const t = useT();
